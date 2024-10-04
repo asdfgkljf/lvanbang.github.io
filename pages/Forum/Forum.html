@@ -1,0 +1,348 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <link rel="icon" href="../../images/index/title-logo.ico">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>山水婺源</title>
+    <link rel="stylesheet" href="./Forum.css">
+    <link rel="stylesheet" href="../../images/font_4304807_m6hg5qktm2/iconfont.css">
+</head>
+
+<body>
+    <div class="center">
+        <!-- 一级导航栏 -->
+        <div class="first-header">
+
+            <div class="txt">
+                <p><img src="../../images/Introduction/logo.png" alt=""></p>
+            </div>
+            <ul>
+
+                <li><a href="../../index.html">首页</a></li>
+                <li><a href="../login/login.html" id="exit">请先登录</a></li>
+                <li><a href="../Introduction/Introduction.html">畅玩婺源</a></li>
+                <li><a href="../User/user.html">个人中心</a></li>
+            </ul>
+
+        </div>
+        <!-- 二级导航栏 -->
+        <div class="header">
+            <div class="content">
+
+                <div class="text">
+                    <h2>用户论坛</h2>
+                    <span>| 分享、结伴、攻略</span>
+                </div>
+                <div class="input">
+                    <input type="text" placeholder="请输入想查询的内容">
+                    <i class="iconfont icon-sousuo1"></i>
+                </div>
+            </div>
+        </div>
+        <!-- 二级导航栏 -->
+        <!-- banner -->
+        <div class="banner">
+            <ul class="banner-list">
+                <li><img src="../../images/Forum/banner.png" alt=""></li>
+            </ul>
+        </div>
+        <!-- banner -->
+
+        <!-- 主体内容 -->
+        <div id="content">
+            <!-- 导航 -->
+            <div class="nav">
+                <ul>
+                    <li class="active" id="share">游记分享</li>
+                    <li id="firend">结伴同行</li>
+                    <li id="photo">时光相册</li>
+                    <hr class="active1">
+                </ul>
+                <div class="line"></div>
+            </div>
+            <!-- 游记分享 -->
+            <div class="share ">
+                <ul>
+                    <li>
+                        <div class="left">
+                            <div class="info">
+                                <div class="img"><img src=${item.pic} alt=""></div>
+                                <div class="username">${item.name}</div>
+                                <div class="address">${item.address}</div>
+                                <div class="date">${item.date}</div>
+                            </div>
+                            <div class="txt">
+                                <div class="text">
+                                    <div class="title">${item.title} <span>印象</span> <i
+                                            class="iconfont icon-xingxing"></i><i class="iconfont icon-xingxing"></i><i
+                                            class="iconfont icon-xingxing"></i><i class="iconfont icon-xingxing"></i>
+                                    </div>
+                                    <p>${item.content}</p>
+                                    <div class="pic"><img src=${item.url} alt=""></div>
+                                </div>
+
+                                <div class="data">
+                                    <div class="see"><i class="iconfont icon-iconkanguo"></i>${item.seeing}</div>
+                                    <div class="like"><i class="iconfont icon-dianzan"></i>${item.like}</div>
+                                    <div class="comment"><i class="iconfont icon-pinglun"></i>${item.tell}</div>
+                                    <div class="icon">
+                                        <div class="forward"><i class="iconfont icon-zhuanfa"></i>转发</div>
+                                        <div class="support"><i class="iconfont icon-dianzan"></i>点赞</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                    </li>
+                </ul>
+                <div class="form">
+                    <div class="top">
+                        <div class="title">快来发新帖吧！</div>
+                        <div class="input">
+                            <div class="address">
+                                <label for="address">地址: </label>
+                                <input type="text" id="address" placeholder="请输入地址">
+                            </div>
+                            <div class="date">
+                                <label for="date">时间:</label>
+                                <input type="date" value="2023-11-07">
+                            </div>
+                            <div class="article">
+                                <label for="article">标题:</label>
+                                <input type="text" placeholder="请输入标题">
+                            </div>
+                            <div class="img">
+                                <label for="img">封面</label>
+                                <div class="pic">
+                                    <select name="pic" id="">
+                                        <option value="../../images/Forum/concution1.png">图1</option>
+                                        <option value="../../images/Forum/concution2.png">图2</option>
+                                        <option value="../../images/Forum/concution3.png">图3</option>
+                                        <option value="../../images/Forum/concution4.png">图4</option>
+                                        <option value="../../images/Forum/concution3.png">图5</option>
+
+                                    </select>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="major">
+                            <label for="content">内容:</label>
+                            <textarea name="content" id="1" cols="30" rows="10" placeholder="请输入内容"></textarea>
+                        </div>
+                        <button class="sumbit" onclick="submitTell">发帖</button>
+                    </div>
+
+                    <div class="bottom">
+                        <p class="title">欢迎加入婺源社区
+                            和80,000,000人在一起
+                            发现婺源新世界</p>
+                        <button class="join">注册加入</button>
+                        <div class="firendLogin">
+                            第三方登录:
+                            <span><i class="iconfont icon-weixin"></i></span>
+                            <span><i class="iconfont icon-douyin"></i></span>
+                            <span><i class="iconfont icon-weibo"></i></span>
+                        </div>
+                    </div>
+                </div>
+                <button class="add">发帖子</button>
+                <div class="hot ">
+                    <div class="title">婺源热点<i class="iconfont icon-a-ziyuan4"></i></div>
+                    <div class="content">
+                        <ul>
+                            <li>
+                                <span>1</span>
+                                <div>10月11日，习近平总书记来到婺源县秋口镇王村石门自然村考察，详细了解饶河源国家湿地公园和极度濒危鸟类蓝冠噪鹛保护等情况。</div><i
+                                    class="iconfont icon-reduhuo"></i>
+                            </li>
+                            <li>
+                                <span>2</span>
+                                <div>江西婺源开启民意“直通车”护航写生旅游</div><i class="iconfont icon-reduhuo"></i>
+                            </li>
+                            <li>
+                                <span>3</span>
+                                <div>江西婺源：用乡村振兴实绩展现主题教育实效</div><i class="iconfont icon-reduhuo"></i>
+                            </li>
+                            <li>
+                                <span>4</span>
+                                <div>主流媒体高频聚焦！这个假期婺源火爆出圈。</div>
+                            </li>
+                            <li>
+                                <span>5</span>
+                                <div>婺源赏秋攻略 | 东线值得打卡的9个景点</div>
+                            </li>
+                            <li>
+                                <span>6</span>
+                                <div>婺源思溪延村 婺源一年四季都是美的，春赏油菜花海，夏享清凉世界，秋观红叶“晒秋</div>
+                            </li>
+                            <li>
+                                <span>7</span>
+                                <div>江湾:平地式的“武营晒秋”在这座徽州古村落特别壮观,一片片红的、绿的、黄的粮食晒在地上,如一盒五彩的调色盘 </div>
+                            </li>
+                            <li>
+                                <span>8</span>
+                                <div>第二批学习贯彻习近平新时代中国特色社会主义思想主题教育开展以来,</div>
+                            </li>
+                            <li>
+                                <span>9</span>
+                                <div>2023年婺源县基层武装部高质量发展示范观摩现场推进会在思口</div>
+                            </li>
+                            <li>
+                                <span>10</span>
+                                <div>最美乡村”婺源马拉松冬日开跑</div>
+                            </li>
+                        </ul>
+                    </div>
+
+                </div>
+                <div class="news">
+                    <div class="title">今日新闻</div>
+                    <ul>
+                        <li><span>1</span>
+                            <div>每周五、周六下午17:00在篁岭村口广场开始表演！</div>
+                        </li>
+                        <li><span>2</span>
+                            <div>婺源入选国家文化产业和旅游产业融合发展示范区建设单位</div>
+                        </li>
+                        <li><span>3</span>
+                            <div>近日，文化和旅游部、自然资源部、住房和城乡建设部发布了《</div>
+                        </li>
+                        <li><span>4</span>
+                            <div>2023江西乡村文化旅游节在婺源开幕</div>
+                        </li>
+                        <li><span>5</span>
+                            <div>秋口镇王村石门自然村的农家小院里</div>
+                        </li>
+                        <li><span>6</span>
+                            <div>王村石门自然村考察石门自然村位于饶河源国家湿地公园的中心地带</div>
+                        </li>
+                        <li><span>7</span>
+                            <div>2023江西婺源马拉松赛鸣枪开跑</div>
+                        </li>
+
+                    </ul>
+                </div>
+            </div>
+
+            <!-- 时光相册 -->
+            <div class="photo hide">
+                <div class="wnz">
+                    <div class="title">婺女洲</div>
+                    <div class="container">
+                        <div class="box"><img src="../../images/WuNvZhou/menpiao1.png" alt=""></div>
+                        <div class="box"><img src="../../images/WuNvZhou/menpiao2.png" alt=""></div>
+                        <div class="box"><img src="../../images/WuNvZhou/menpiao3.png" alt=""></div>
+                        <div class="box"><img src="../../images/WuNvZhou/menpiao4.png" alt=""></div>
+                    </div>
+                    <div class="change">
+                        <button>换一组</button>
+                    </div>
+                </div>
+                <div class="hl">
+                    <div class="title">篁岭</div>
+                    <div class="container">
+                        <div class="box"><img src="../../images/HuangLing/menpiao1.png" alt=""></div>
+                        <div class="box"><img src="../../images/HuangLing/menpiao2.png" alt=""></div>
+                        <div class="box"><img src="../../images/HuangLing/menpiao3.png" alt=""></div>
+                        <div class="box"><img src="../../images/HuangLing/menpiao9.png" alt=""></div>
+
+                    </div>
+                </div>
+
+            </div>
+            <!-- 结伴同行 -->
+            <div class="firends hide">
+                <ul>
+                    <li>
+                        <div class="left">
+                            <div class="info">
+                                <div class="img"><img src="./images/JiangWang/banner1.jpeg" alt=""></div>
+                                <div class="username">${item.name}</div>
+                                <div class="address">${item.address}</div>
+                                <div class="date">${item.date}</div>
+                            </div>
+                            <div class="txt">
+                                <div class="text">
+                                    <p>${item.content}</p>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                </ul>
+
+                <div class="form">
+                    <div class="input">
+                        <input type="text" placeholder="搜索目的地">
+                        <i class="iconfont icon-sousuo1"></i>
+                    </div>
+                    <div class="upload">
+
+                        <div class="title">发帖寻找旅游搭子！</div>
+                        <div class="input">
+                            <div class="address">
+                                <label for="address">旅游目的地: </label>
+                                <input type="text" id="address" placeholder="请输入地址">
+                            </div>
+                            <div class="date">
+                                <label for="date">旅游时间:</label>
+                                <input type="text" placeholder="请输入时间">
+                            </div>
+                        </div>
+                        <div class="major">
+                            <label for="content">个人介绍:</label>
+                            <textarea name="content" id="1" cols="30" rows="10" placeholder="请输入内容"></textarea>
+                        </div>
+                        <div class="major">
+                            <label for="content">要求:</label>
+                            <textarea name="content" id="1" cols="30" rows="10" placeholder="请输入内容"></textarea>
+                        </div>
+                        <button class="sumbit" onclick="submitTell">发帖</button>
+
+                    </div>
+                </div>
+
+            </div>
+
+
+            <!-- 游记分享 -->
+        </div>
+        <!-- 主体内容 -->
+
+        <!-- 版权部分 -->
+        <div class="footer">
+            <div class="left">
+                <p>版权所有：Copyright © 2024 123</p>
+                <p>电话（tel）: 123-768-86753 </p>
+                <p>邮箱：3248935579@qq.com</p>
+            </div>
+            <div class="right">
+                <div class="us">
+                    <h4>关注我们</h4>
+                </div>
+                <ul>
+                    <li class="active">
+                        <i class="iconfont icon-weixin"></i>
+                        <div class="box"></div>
+                    </li>
+                    <li>
+                        <i class="iconfont icon-weibo"></i>
+                        <div class="box"></div>
+
+                    </li>
+                    <li>
+                        <i class="iconfont icon-douyin"></i>
+                        <div class="box"></div>
+
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <!-- 版权部分 -->
+
+    </div>
+    <script src="./Forum.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,1711 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #fbf9f9;
+}
+
+.center {
+  margin: 0 auto;
+  /* background-color: pink; */
+  width: 100%;
+  text-align: end;
+}
+
+a {
+  color: #fff;
+  list-style: none;
+  text-decoration: none;
+}
+
+/* 公共通用样式或默认样式 */
+/* 一级导航栏 */
+.first-header {
+  width: 100%;
+  height: 47px;
+  background-color: #333;
+  display: flex;
+  justify-content: space-between;
+}
+
+.first-header .txt p {
+  margin: 0;
+  padding: 0;
+  color: #fff;
+  font-size: 20px;
+  margin-left: 150px;
+  line-height: 47px;
+}
+
+.first-header ul {
+  display: flex;
+  list-style: none;
+}
+
+.first-header ul li {
+  color: #fff;
+  list-style: none;
+  width: 64px;
+  height: 16px;
+  font-size: 16px;
+  font-family: AdobeHeitiStd-Regular;
+  line-height: 47px;
+  margin-right: 40px;
+}
+
+.first-header ul li:nth-child(4) {
+  margin-right: 120px;
+}
+
+.first-header ul li:hover {
+  font-weight: 700;
+}
+
+.first-header .txt p:hover {
+  font-weight: 700;
+}
+
+/* 一级导航栏 */
+/* 二级导航栏 */
+.header {
+  width: 100%;
+  height: 108px;
+  background-color: #89e291;
+}
+
+.header .content {
+  display: flex;
+  width: 1500px;
+  height: 108px;
+  margin: 0 auto;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.header .content .text {
+  display: flex;
+  align-items: center;
+}
+
+.header .content .text span {
+  font-family: MicrosoftYaHei;
+  font-size: 18px;
+  font-weight: normal;
+  letter-spacing: 0px;
+  color: #333333;
+}
+
+.header .content .text h2 {
+  font-family: STXingkai;
+  font-size: 70px;
+  font-weight: normal;
+  font-stretch: normal;
+  letter-spacing: 0px;
+  color: #040404;
+}
+
+.header .content .input {
+  position: relative;
+  padding-right: 30px;
+}
+
+.header .content .input input {
+  width: 466px;
+  height: 51px;
+  background-color: #fbf9f9;
+  border-radius: 10px;
+  border: 1px solid #efefef;
+  text-align: center;
+  font-family: MicrosoftYaHei;
+  font-size: 18px;
+  font-weight: normal;
+  font-stretch: normal;
+  letter-spacing: 0px;
+  color: #999999;
+  outline: navajowhite;
+}
+
+.header .content .input input:focus {
+  border: 1px solid #efefef;
+  box-shadow: 0 0 10px #efefef;
+}
+
+.header .content .input i {
+  position: absolute;
+  top: 15px;
+  right: 40px;
+  font-size: 25px;
+}
+
+/* 二级导航栏 */
+.banner {
+  width: 100%;
+  height: 551px;
+  margin: 0 auto;
+  text-align: center;
+  position: relative;
+}
+
+.banner .banner-list {
+  width: 100%;
+  height: 100%;
+  z-index: 10;
+}
+
+.banner .banner-list li img {
+  width: 1439px;
+  height: 551px;
+  border: 1px solid #efefef;
+}
+
+.banner::after {
+  content: '';
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-color: efefef;
+  background-image: url(../../images/Introduction/banner.png);
+  background-size: 200%;
+  top: 0;
+  left: 0;
+  z-index: -1;
+  filter: blur(10px);
+}
+
+/* 版权区域 */
+.footer {
+  width: 100%;
+  height: 266px;
+  background-color: #89e291;
+  margin-top: 100px;
+  display: flex;
+  justify-content: space-between;
+  z-index: 100;
+}
+
+.footer .left {
+  margin-left: 150px;
+  margin-top: 60px;
+}
+
+.footer .left p {
+  color: #fff;
+  font-weight: 700;
+  font-size: 26px;
+  margin-top: 10px;
+}
+
+.footer .right {
+  /* background-color: red; */
+  margin-right: 300px;
+}
+
+.footer .right h4 {
+  color: #fff;
+  text-align: center;
+  font-size: 40px;
+  margin-top: 50px;
+}
+
+.footer .right ul {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  margin-top: 30px;
+}
+
+.footer .right ul li {
+  width: 72px;
+  height: 72px;
+  border-radius: 50%;
+  background-color: #fff;
+  text-align: center;
+  line-height: 72px;
+  margin-left: 10px;
+  margin-right: 10px;
+  position: relative;
+}
+
+.footer .right ul li i {
+  color: #89e291;
+  font-size: 40px;
+}
+
+.footer .right ul li:nth-child(3) i {
+  font-size: 37px;
+}
+
+.footer .right ul li .box {
+  position: absolute;
+  width: 176px;
+  height: 176px;
+  border-radius: 20px;
+}
+
+.footer .right ul li:nth-child(1) .box {
+  background-color: #fff;
+  /* display: none; */
+  top: -80px;
+  left: 280px;
+  background-image: url(../../images/index/wexin.jpg);
+  background-size: contain;
+}
+
+.footer .right ul li:nth-child(2) .box {
+  background-color: pink;
+  display: none;
+  top: -80px;
+  left: 188px;
+  background-image: url(../../images/index/blilibili.jpg);
+  background-size: contain;
+}
+
+.footer .right ul li:nth-child(3) .box {
+  display: none;
+  top: -80px;
+  right: -200px;
+  background-image: url(../../images/index/douyin.jpg);
+  background-size: contain;
+}
+
+.footer .right ul li.active i,
+.right ul li:hover i {
+  color: #fff;
+}
+
+.footer .right ul li.active,
+.footer .right ul li:hover {
+  background-color: #89e291;
+  /* border: 1px solid #000;
+     */
+  box-shadow: 0 0 10px #fff;
+}
+
+.footer .right ul li.active .box {
+  display: block;
+}
+
+/* 版权区域 */
+#content {
+  width: 1500px;
+  background-color: #fbf9f9;
+  margin: 0 auto;
+  height: auto;
+}
+
+#content .nav {
+  width: 100%;
+  background-color: #fff;
+  margin-top: 10px;
+}
+
+#content .nav ul {
+  list-style: none;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #fff;
+  padding: 0 30px;
+  padding-top: 54px;
+  border-radius: 10px;
+  position: relative;
+}
+
+#content .nav ul li {
+  font-family: MicrosoftYaHei;
+  font-size: 34px;
+  font-weight: normal;
+  font-stretch: normal;
+  letter-spacing: 0px;
+  color: #666666;
+  position: relative;
+  cursor: pointer;
+}
+
+#content .nav ul hr {
+  width: 150px;
+  height: 20px;
+  background-color: #89e291;
+  border: none;
+  position: absolute;
+  bottom: -35px;
+  left: 25px;
+  border-radius: 10px;
+  transition: all 0.5s;
+}
+
+#content .nav ul hr.active1 {
+  transform: translateX(10px);
+}
+
+#content .nav ul hr.active2 {
+  transform: translateX(650px);
+}
+
+#content .nav ul hr.active3 {
+  transform: translateX(1300px);
+}
+
+#content .nav ul li.active {
+  color: #89e291;
+  font-size: 38px;
+  font-weight: 700;
+}
+
+#content .nav .line {
+  width: 100%;
+  height: 6px;
+  background-color: #999999;
+  margin-top: 22px;
+}
+
+#content .share {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  position: relative;
+  overflow: hidden;
+}
+
+#content .share.hide {
+  display: none;
+}
+
+#content .share ul {
+  list-style: none;
+  margin-left: 20px;
+}
+
+#content .share ul li {
+  width: 952px;
+  background-color: #ffffff;
+  border-radius: 10px;
+  border: solid 1px #999999;
+  margin-top: 31px;
+  transition: all 0.5s;
+  padding-bottom: 50px;
+}
+
+#content .share ul li .info {
+  display: flex;
+  align-items: center;
+  margin-top: 16px;
+}
+
+#content .share ul li .info .img {
+  width: 53px;
+  height: 53px;
+  background-color: #89e291;
+  border-radius: 50%;
+  margin-left: 14px;
+}
+
+#content .share ul li .info .img img {
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+}
+
+#content .share ul li .info .username {
+  font-family: MicrosoftYaHei;
+  font-size: 24px;
+  font-weight: normal;
+  font-stretch: normal;
+  letter-spacing: 0px;
+  color: #666666;
+  margin-left: 26px;
+}
+
+#content .share ul li .info .address {
+  font-family: MicrosoftYaHei;
+  font-size: 18px;
+  font-weight: normal;
+  font-stretch: normal;
+  letter-spacing: 0px;
+  color: #666666;
+  opacity: 0.66;
+  margin-left: 65px;
+}
+
+#content .share ul li .info .date {
+  font-family: MicrosoftYaHei;
+  font-size: 18px;
+  font-weight: normal;
+  font-stretch: normal;
+  letter-spacing: 0px;
+  color: #666666;
+  margin-left: 559px;
+}
+
+#content .share ul li .txt .text {
+  margin-left: 89px;
+  margin-top: 20px;
+  text-align: left;
+  position: relative;
+}
+
+#content .share ul li .txt .text .title {
+  font-family: MicrosoftYaHei;
+  font-size: 24px;
+  font-weight: 700;
+  font-stretch: normal;
+  letter-spacing: 0px;
+  color: #333333;
+}
+
+#content .share ul li .txt .text .title span {
+  font-family: MicrosoftYaHei-Bold;
+  font-size: 10px;
+  font-weight: normal;
+  font-stretch: normal;
+  letter-spacing: 0px;
+  color: #fbfcfb;
+  padding: 5px 14px;
+  background-color: #ec0b0b;
+  border-radius: 10px;
+  margin-left: 18px;
+  margin-right: 24px;
+}
+
+#content .share ul li .txt .text .title i {
+  color: gold;
+  font-size: 16px;
+  margin-left: 5px;
+}
+
+#content .share ul li .txt .text p {
+  width: 432px;
+  font-family: MicrosoftYaHei;
+  font-size: 18px;
+  font-weight: normal;
+  font-stretch: 20%;
+  letter-spacing: px;
+  color: #999999;
+  margin-top: 31px;
+}
+
+#content .share ul li .txt .text .pic {
+  width: 258px;
+  height: 160px;
+  position: absolute;
+  top: -10px;
+  right: 82px;
+}
+
+#content .share ul li .data {
+  width: 100%;
+  display: flex;
+  align-self: center;
+  margin-top: 50px;
+  margin-left: 84px;
+}
+
+#content .share ul li .data .see {
+  font-family: MicrosoftYaHei;
+  font-size: 18px;
+  font-weight: normal;
+  font-stretch: normal;
+  letter-spacing: 0px;
+  color: #999999;
+  margin-right: 35px;
+}
+
+#content .share ul li .data .see i {
+  font-size: 20px;
+  color: #999999;
+  margin-right: 10px;
+}
+
+#content .share ul li .data .like {
+  font-family: MicrosoftYaHei;
+  font-size: 18px;
+  font-weight: normal;
+  font-stretch: normal;
+  letter-spacing: 0px;
+  color: #999999;
+  margin-right: 27px;
+}
+
+#content .share ul li .data .like i {
+  font-size: 20px;
+  color: #999999;
+  margin-right: 10px;
+}
+
+#content .share ul li .data .comment {
+  font-family: MicrosoftYaHei;
+  font-size: 18px;
+  font-weight: normal;
+  font-stretch: normal;
+  letter-spacing: 0px;
+  color: #999999;
+  margin-right: 290px;
+}
+
+#content .share ul li .data .comment i {
+  font-size: 20px;
+  color: #999999;
+  margin-right: 10px;
+}
+
+#content .share ul li .data .icon {
+  display: flex;
+}
+
+#content .share ul li .data .icon .forward {
+  font-family: MicrosoftYaHei;
+  font-size: 18px;
+  font-weight: normal;
+  font-stretch: normal;
+  letter-spacing: 0px;
+  color: #999999;
+  margin-right: 60px;
+}
+
+#content .share ul li .data .icon .forward i {
+  font-size: 18px;
+  color: #999999;
+  margin-right: 10px;
+}
+
+#content .share ul li .data .icon .support {
+  font-family: MicrosoftYaHei;
+  font-size: 18px;
+  font-weight: normal;
+  font-stretch: normal;
+  letter-spacing: 0px;
+  color: #999999;
+}
+
+#content .share ul li .data .icon .support i {
+  font-size: 20px;
+  color: #999999;
+  margin-right: 10px;
+}
+
+#content .share ul li:hover {
+  transform: scale(1.03);
+}
+
+#content .share ul li .tell {
+  z-index: -10;
+  height: 0;
+  display: none;
+  transition: all 0.3s ease-in-out;
+  transform: translateY(-300px);
+  bottom: -180px;
+  width: 100%;
+  text-align: left;
+  background-color: #fff;
+  border-radius: 0 0 20px 20px;
+  padding-top: 10px;
+  padding-left: 50px;
+  border-top: 0;
+}
+
+#content .share ul li .tell.show {
+  height: auto;
+  display: block;
+  transform: translateY(0);
+}
+
+#content .share ul li .tell .comminction {
+  margin-top: 20px;
+  margin-bottom: 20px;
+  position: relative;
+  transition: all 0.3s ease-in-out;
+  padding-top: 15px;
+  border-top: 1px solid #eeeeee;
+}
+
+#content .share ul li .tell .comminction .good i {
+  display: inline-block;
+  position: absolute;
+  right: 10%;
+  top: 50%;
+  font-size: 30px;
+  color: #999;
+  transition: all 0.3s ease-in-out;
+}
+
+#content .share ul li .tell .comminction .good i.active {
+  color: #fe7a7f;
+  transform: scale(1.2);
+}
+
+#content .share ul li .tell .comminction .good i span {
+  right: 10%;
+  top: 50%;
+  position: absolute;
+  width: 18px;
+  height: 18px;
+  border-radius: 50%;
+  box-shadow: 0 -160px 0 #fe7a7f, 0 160px 0 #fe7a7f, -160px 0 0 #fe7a7f, 160px 0 0 #fe7a7f, -120px -120px 0 #fe7a7f, 120px -120px 0 #fe7a7f, 120px 120px 0 #fe7a7f, -120px 120px 0 #fe7a7f;
+  transition: all 0.3s ease-in-out;
+  opacity: 0;
+}
+
+#content .share ul li .tell .comminction .good i span.active {
+  animation: blink 0.85s ease-in-out forwards;
+}
+
+@keyframes blink {
+  0% {
+    transform: scale(-50%, -50%) scale(0.5);
+    opacity: 0.8;
+  }
+
+  50% {
+    transform: translate(-50%, -50%) scale(1);
+    opacity: 1;
+  }
+
+  100% {
+    transform: translate(-50%, -50%) scale(1.1);
+    opacity: 0;
+  }
+}
+
+#content .share ul li .tell .comminction .user {
+  display: flex;
+  align-items: center;
+}
+
+#content .share ul li .tell .comminction .user img {
+  width: 40px;
+  border-radius: 50%;
+}
+
+#content .share ul li .tell .comminction .user .name {
+  color: #999;
+  margin-left: 20px;
+}
+
+#content .share ul li .tell .comminction .comment p {
+  margin-top: 10px;
+  font-size: 14px;
+  color: #999;
+}
+
+#content .share ul li .tell .comminction .address {
+  color: #999;
+  font-size: 16px;
+  margin-top: 10px;
+}
+
+#content .share .form {
+  z-index: 10;
+  width: auto;
+  margin-left: 20px;
+  transform: translateX(500px);
+  transition: all 0.5s;
+}
+
+#content .share .form.active {
+  transform: translateX(0);
+}
+
+#content .share .form .top {
+  width: 487px;
+  height: 902px;
+  background-image: linear-gradient(0deg, #c1fdc9 0%, #90f9c4 50%, #57f5a1 100%);
+  border-radius: 10px;
+  border: solid 1px #999999;
+  text-align: center;
+  margin-top: 31px;
+}
+
+#content .share .form .top .title {
+  font-family: MicrosoftYaHei-Bold;
+  font-size: 36px;
+  font-weight: normal;
+  font-stretch: normal;
+  letter-spacing: 0px;
+  color: #ffffff;
+  margin-top: 31px;
+}
+
+#content .share .form .top .input {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  margin-top: 47px;
+}
+
+#content .share .form .top .input .address {
+  text-align: left;
+  margin-left: 20px;
+}
+
+#content .share .form .top .input .address label {
+  display: block;
+  font-family: MicrosoftYaHei;
+  font-size: 18px;
+  font-weight: normal;
+  font-stretch: normal;
+  letter-spacing: 0px;
+  color: #ffffff;
+}
+
+#content .share .form .top .input .address input {
+  width: 201px;
+  height: 48px;
+  background-color: #ffffff;
+  border-radius: 10px;
+  border: 0;
+  outline: none;
+  font-family: MicrosoftYaHei;
+  font-size: 18px;
+  font-weight: normal;
+  font-stretch: normal;
+  letter-spacing: 0px;
+  color: #999;
+  padding: 17px 15px;
+}
+
+#content .share .form .top .input .date {
+  text-align: left;
+  margin-left: 49px;
+}
+
+#content .share .form .top .input .date input {
+  height: 48px;
+  border-radius: 10px;
+  border: solid 1px #ffffff;
+  font-family: MicrosoftYaHei;
+  font-size: 18px;
+  font-weight: normal;
+  font-stretch: normal;
+  letter-spacing: 0px;
+  color: #999999;
+  padding: 12px 22px;
+  outline: none;
+  padding-right: 5px;
+}
+
+#content .share .form .top .input .article {
+  text-align: left;
+  margin-top: 44px;
+  margin-left: 20px;
+}
+
+#content .share .form .top .input .article input {
+  width: 201px;
+  height: 48px;
+  border-radius: 10px;
+  border: solid 1px #ffffff;
+  font-family: MicrosoftYaHei;
+  font-size: 18px;
+  font-weight: normal;
+  font-stretch: normal;
+  letter-spacing: 0px;
+  color: #999999;
+  padding: 17px 15px;
+  outline: none;
+}
+
+#content .share .form .top .input .img {
+  text-align: left;
+  margin-top: 44px;
+  margin-left: 40px;
+}
+
+#content .share .form .top .input .img .pic select {
+  width: 201px;
+  height: 48px;
+  border-radius: 10px;
+  border: solid 1px #ffffff;
+  font-family: MicrosoftYaHei;
+  font-size: 18px;
+  font-weight: normal;
+  font-stretch: normal;
+  letter-spacing: 0px;
+  color: #999999;
+  padding: 0 15px;
+  outline: none;
+}
+
+#content .share .form .top .input label {
+  display: block;
+  font-family: MicrosoftYaHei;
+  font-size: 18px;
+  font-weight: normal;
+  font-stretch: normal;
+  letter-spacing: 0px;
+  color: #ffffff;
+  margin-bottom: 9px;
+}
+
+#content .share .form .top .major {
+  text-align: left;
+  margin-left: 13px;
+  margin-top: 38px;
+}
+
+#content .share .form .top .major label {
+  display: block;
+  font-family: MicrosoftYaHei;
+  font-size: 18px;
+  font-weight: normal;
+  font-stretch: normal;
+  letter-spacing: 0px;
+  color: #ffffff;
+  margin-bottom: 9px;
+}
+
+#content .share .form .top .major textarea {
+  width: 460px;
+  height: 264px;
+  background-color: #ffffff;
+  border-radius: 10px;
+  font-family: MicrosoftYaHei;
+  font-size: 18px;
+  font-weight: normal;
+  font-stretch: normal;
+  letter-spacing: 0px;
+  color: #999999;
+  padding: 17px 27px 0;
+  outline: none;
+  border: none;
+  resize: initial;
+}
+
+#content .share .form .top .sumbit {
+  width: 243px;
+  height: 82px;
+  background-image: linear-gradient(0deg, #c1fdc9 0%, #90f9c4 50%, #57f5a1 100%);
+  box-shadow: 0px 3px 7px 0px rgba(0, 0, 0, 0.35);
+  border-radius: 10px;
+  border: solid 1px #cbc7c7;
+  font-family: MicrosoftYaHei-Bold;
+  font-size: 30px;
+  font-weight: normal;
+  font-stretch: normal;
+  letter-spacing: 0px;
+  color: #ffffff;
+  margin-top: 100px;
+  box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.6);
+}
+
+#content .share .form .top .sumbit:active {
+  transform: scale(0.95);
+}
+
+#content .share .form .bottom {
+  width: 487px;
+  height: 529px;
+  background-image: linear-gradient(0deg, #43ea80 0%, #38f8d4 100%);
+  text-align: left;
+  margin-top: 150px;
+}
+
+#content .share .form .bottom p {
+  text-align: left;
+  width: 320px;
+  height: 134px;
+  font-family: MicrosoftYaHei;
+  font-size: 30px;
+  font-weight: normal;
+  font-stretch: normal;
+  letter-spacing: 0px;
+  color: #ffffff;
+  padding-left: 31px;
+  padding-top: 63px;
+}
+
+#content .share .form .bottom .join {
+  width: 218px;
+  height: 68px;
+  border-radius: 10px;
+  border: solid 1px #fbfcfb;
+  font-family: MicrosoftYaHei;
+  font-size: 30px;
+  font-weight: normal;
+  font-stretch: normal;
+  letter-spacing: 0px;
+  color: #ffffff;
+  background-color: transparent;
+  margin-top: 97px;
+  margin-left: 37px;
+  box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.6);
+}
+
+#content .share .form .bottom .join:active {
+  transform: scale(0.95);
+}
+
+#content .share .form .bottom .firendLogin {
+  font-family: MicrosoftYaHeiLight;
+  font-size: 24px;
+  font-weight: normal;
+  font-stretch: normal;
+  letter-spacing: 0px;
+  color: #ffffff;
+  display: flex;
+  align-items: center;
+  margin-left: 38px;
+  margin-top: 60px;
+}
+
+#content .share .form .bottom .firendLogin span {
+  display: block;
+  width: 72px;
+  height: 72px;
+  text-align: center;
+  line-height: 73px;
+  background-color: transparent;
+  border-radius: 50%;
+  box-shadow: 0 0 10px #fff;
+  margin-left: 14px;
+}
+
+#content .share .form .bottom .firendLogin span i {
+  font-size: 45px;
+}
+
+#content .share .form .bottom .firendLogin span:nth-child(2) i {
+  font-size: 40px;
+}
+
+#content .share .add {
+  position: absolute;
+  top: 50px;
+  right: 40px;
+  width: 400px;
+  height: 80px;
+  background-image: linear-gradient(0deg, #c1fdc9 0%, #90f9c4 50%, #57f5a1 100%);
+  text-align: center;
+  line-height: 80px;
+  border-radius: 30px;
+  border: 0 solid #000;
+  transition: all 0.3s;
+  font-size: 25px;
+  color: #fff;
+  font-weight: 700;
+  box-shadow: 0 0 10px #999;
+  box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.6);
+}
+
+#content .share .add:active {
+  transform: scale(0.95);
+}
+
+#content .share .add.active {
+  opacity: 0;
+}
+
+#content .share .hot {
+  position: absolute;
+  top: 200px;
+  right: 40px;
+  width: 420px;
+  background-color: #fff;
+  z-index: 0;
+  border-radius: 10px;
+  border: 1px dashed #89e291;
+}
+
+#content .share .hot.hide {
+  display: none;
+}
+
+#content .share .hot .title {
+  width: 100%;
+  height: 90px;
+  line-height: 90px;
+  background-color: #fff;
+  border-radius: 10px 10px 0 0;
+  font-size: 32px;
+  color: #89e291;
+  font-weight: 700;
+  text-shadow: 3px 0px 2px #efefef, 0px 3px 2px #e0dede;
+  text-align: left;
+  padding-left: 40px;
+  border-bottom: 1px dashed #89e291;
+  position: relative;
+}
+
+#content .share .hot .title i {
+  font-size: 55px;
+  position: absolute;
+  right: 40px;
+  color: #ec0b0b;
+}
+
+#content .share .hot .content {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+}
+
+#content .share .hot .content ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+#content .share .hot .content ul li {
+  border: none;
+  width: 400px;
+  height: 40px;
+  display: flex;
+  position: relative;
+}
+
+#content .share .hot .content ul li div {
+  width: 300px;
+  height: 40px;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  line-height: 40px;
+  font-size: 22px;
+  color: #666;
+}
+
+#content .share .hot .content ul li span {
+  font-size: 26px;
+  margin-right: 20px;
+  margin-left: 30px;
+  line-height: 40px;
+  font-weight: 700;
+  color: #333;
+}
+
+#content .share .hot .content ul li i {
+  position: absolute;
+  right: 0;
+  top: 0;
+  font-size: 30px;
+  color: #333;
+}
+
+#content .share .hot .content ul li:nth-child(1) span {
+  font-size: 26px;
+  font-weight: 700;
+  color: #ec0b0b;
+}
+
+#content .share .hot .content ul li:nth-child(1) i {
+  color: #ec0b0b;
+}
+
+#content .share .hot .content ul li:nth-child(2) span {
+  font-size: 26px;
+  font-weight: 700;
+  color: #ef4242;
+}
+
+#content .share .hot .content ul li:nth-child(2) i {
+  color: #ef4242;
+}
+
+#content .share .hot .content ul li:nth-child(3) span {
+  font-size: 26px;
+  font-weight: 700;
+  color: #ff9a02;
+}
+
+#content .share .hot .content ul li:nth-child(3) i {
+  color: #ff9a02;
+}
+
+#content .share .news {
+  position: absolute;
+  top: 1150px;
+  right: 40px;
+  width: 420px;
+  background-color: #fff;
+  z-index: 0;
+  border-radius: 10px;
+  border: 1px dashed #89e291;
+  margin-top: 20px;
+}
+
+#content .share .news.hide {
+  display: none;
+}
+
+#content .share .news .title {
+  width: 100%;
+  height: 90px;
+  line-height: 90px;
+  background-color: #fff;
+  border-radius: 10px 10px 0 0;
+  font-size: 32px;
+  color: #89e291;
+  font-weight: 700;
+  text-shadow: 3px 0px 2px #efefef, 0px 3px 2px #e0dede;
+  text-align: left;
+  padding-left: 40px;
+  border-bottom: 1px dashed #89e291;
+  position: relative;
+}
+
+#content .share .news .title i {
+  font-size: 55px;
+  position: absolute;
+  right: 40px;
+  color: #ec0b0b;
+}
+
+#content .share .news ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+#content .share .news ul li {
+  border: none;
+  width: 400px;
+  height: 40px;
+  display: flex;
+  position: relative;
+}
+
+#content .share .news ul li div {
+  width: 300px;
+  height: 40px;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  line-height: 40px;
+  font-size: 22px;
+  color: #666;
+}
+
+#content .share .news ul li span {
+  font-size: 26px;
+  margin-right: 20px;
+  margin-left: 30px;
+  line-height: 40px;
+  font-weight: 700;
+  color: #333;
+}
+
+#content .share .news ul li i {
+  position: absolute;
+  right: 0;
+  top: 0;
+  font-size: 30px;
+  color: #333;
+}
+
+#content .photo {
+  width: 100%;
+}
+
+#content .photo.hide {
+  display: none;
+}
+
+#content .photo .wnz {
+  position: relative;
+  /* :not 选择器表示不包含的意思
+             .container:hover > :not(:hover)  表示选中container鼠标悬浮时直接子元素且不包含被悬浮的直接子元素
+            */
+  /* 兄弟选择器可以选中本元素以后的所有兄弟元素 */
+}
+
+#content .photo .wnz .title {
+  width: 30%;
+  height: 100px;
+  text-align: center;
+  line-height: 100px;
+  font-size: 46px;
+  font-weight: 700;
+  letter-spacing: 1rem;
+  font-family: '微软雅黑';
+  margin: 50px auto;
+  background-color: #fff;
+  border-radius: 50px;
+  border: 1px dashed #89e291;
+}
+
+#content .photo .wnz .container {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /* transform-style 设置元素的子元素是2D显示还是3D显示 
+                   flat:  设置元素的子元素位于该元素的平面中
+                   preserve-3d: 设置元素的子元素位于该元素的3D空间中
+                   一般用于开启3D显示空间，但此属性是一项实验性技术，对浏览器兼容性有要求
+                */
+  transform-style: preserve-3d;
+}
+
+#content .photo .wnz .box {
+  width: 350px;
+  /* height: 120px; */
+  margin: 0 2px;
+  position: relative;
+  transition: 0.5s;
+  cursor: pointer;
+  /* 添加倒影 */
+  -webkit-box-reflect: below 1px linear-gradient(transparent, rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.9));
+  /* -webkit-box-reflect 将元素的内容在特定的方向上生成一个轴对称反射 且是一个复合属性
+                 第一个值为反射方向  above 上、below 下、right、left
+                第二个值为反射大小 **px 
+                第三值为描述要应用到反射的蒙版 CSS 的<image>数据类型均可作为值
+    
+                
+                */
+}
+
+#content .photo .wnz img {
+  width: 350px;
+  /* height: 100%; */
+  border-radius: 5px;
+}
+
+#content .photo .wnz .container:hover> :not(:hover) {
+  margin: 0 -20px;
+  filter: drop-shadow(0 0 25px #efefef) drop-shadow(0 0 45px #efefef);
+  /*  drop-shadow 沿图像的轮廓生成阴影效果
+                该属性共有五个值 
+                第一个参数表示水平偏移量
+                第二个参数表示垂直偏移量
+                第三个参数表示阴影模糊半径
+                第四个参数表示阴影的扩散半径
+                第五个参数表示阴影的颜色
+                 */
+  /* perspective 指定了观察者与 z=0 平面的距离，使具有三维位置变换的元素产生透视效果。
+                 z>0 的三维元素比正常大，而 z<0 时则比正常小，大小程度由该属性的值决定。
+                 
+                 */
+  transform: perspective(500px) rotateY(45deg) scale(0.95);
+}
+
+#content .photo .wnz .box:hover~.box {
+  transform: perspective(500px) rotateY(-45deg) scale(0.95);
+}
+
+#content .photo .wnz .box:hover {
+  transform: perspective(500px) rotateY(0) scale(1.2);
+  z-index: 100;
+}
+
+#content .photo .wnz .change {
+  width: 200px;
+  height: 100px;
+  position: absolute;
+  bottom: -350px;
+  right: 45px;
+  text-align: center;
+  line-height: 100px;
+}
+
+#content .photo .wnz .change button {
+  width: 150px;
+  height: 60px;
+  border-radius: 15px;
+  border: none;
+  color: #fff;
+  background-color: #89e291;
+  font-size: 24px;
+  box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.6);
+}
+
+#content .photo .wnz .change button:active {
+  transform: scale(0.95);
+}
+
+#content .photo .hl {
+  margin-top: 350px;
+  margin-bottom: 300px;
+  /* :not 选择器表示不包含的意思
+             .container:hover > :not(:hover)  表示选中container鼠标悬浮时直接子元素且不包含被悬浮的直接子元素
+            */
+  /* 兄弟选择器可以选中本元素以后的所有兄弟元素 */
+}
+
+#content .photo .hl .title {
+  width: 30%;
+  height: 100px;
+  text-align: center;
+  line-height: 100px;
+  font-size: 46px;
+  font-weight: 700;
+  letter-spacing: 1rem;
+  font-family: '微软雅黑';
+  margin: 50px auto;
+  background-color: #fff;
+  border-radius: 50px;
+  border: 1px dashed #89e291;
+}
+
+#content .photo .hl .container {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /* transform-style 设置元素的子元素是2D显示还是3D显示 
+                   flat:  设置元素的子元素位于该元素的平面中
+                   preserve-3d: 设置元素的子元素位于该元素的3D空间中
+                   一般用于开启3D显示空间，但此属性是一项实验性技术，对浏览器兼容性有要求
+                */
+  transform-style: preserve-3d;
+}
+
+#content .photo .hl .box {
+  width: 350px;
+  /* height: 120px; */
+  margin: 0 2px;
+  position: relative;
+  transition: 0.5s;
+  cursor: pointer;
+  /* 添加倒影 */
+  -webkit-box-reflect: below 1px linear-gradient(transparent, #646363);
+  /* -webkit-box-reflect 将元素的内容在特定的方向上生成一个轴对称反射 且是一个复合属性
+                 第一个值为反射方向  above 上、below 下、right、left
+                第二个值为反射大小 **px 
+                第三值为描述要应用到反射的蒙版 CSS 的<image>数据类型均可作为值
+    
+                
+                */
+}
+
+#content .photo .hl img {
+  width: 350px;
+  /* height: 100%; */
+  border-radius: 5px;
+}
+
+#content .photo .hl .container:hover> :not(:hover) {
+  margin: 0 -20px;
+  filter: drop-shadow(0 0 25px #efefef) drop-shadow(0 0 45px #efefef);
+  /*  drop-shadow 沿图像的轮廓生成阴影效果
+                该属性共有五个值 
+                第一个参数表示水平偏移量
+                第二个参数表示垂直偏移量
+                第三个参数表示阴影模糊半径
+                第四个参数表示阴影的扩散半径
+                第五个参数表示阴影的颜色
+                 */
+  /* perspective 指定了观察者与 z=0 平面的距离，使具有三维位置变换的元素产生透视效果。
+                 z>0 的三维元素比正常大，而 z<0 时则比正常小，大小程度由该属性的值决定。
+                 
+                 */
+  transform: perspective(500px) rotateY(45deg) scale(0.95);
+}
+
+#content .photo .hl .box:hover~.box {
+  transform: perspective(500px) rotateY(-45deg) scale(0.95);
+}
+
+#content .photo .hl .box:hover {
+  transform: perspective(500px) rotateY(0) scale(1.2);
+  z-index: 100;
+}
+
+#content .firends {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  position: relative;
+  overflow: hidden;
+}
+
+#content .firends.hide {
+  display: none;
+}
+
+#content .firends ul {
+  list-style: none;
+  margin-left: 20px;
+}
+
+#content .firends ul li {
+  width: 952px;
+  background-color: #ffffff;
+  border-radius: 10px;
+  border: solid 1px #999999;
+  margin-top: 31px;
+  transition: all 0.5s;
+  padding-bottom: 50px;
+}
+
+#content .firends ul li .info {
+  display: flex;
+  align-items: center;
+  margin-top: 16px;
+}
+
+#content .firends ul li .info .img {
+  width: 53px;
+  height: 53px;
+  background-color: #89e291;
+  border-radius: 50%;
+  margin-left: 14px;
+}
+
+#content .firends ul li .info .img img {
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+}
+
+#content .firends ul li .info .username {
+  font-family: MicrosoftYaHei;
+  font-size: 24px;
+  font-weight: normal;
+  font-stretch: normal;
+  letter-spacing: 0px;
+  color: #666666;
+  margin-left: 26px;
+}
+
+#content .firends ul li .info .address {
+  font-family: MicrosoftYaHei;
+  font-size: 18px;
+  font-weight: normal;
+  font-stretch: normal;
+  letter-spacing: 0px;
+  color: #666666;
+  opacity: 0.66;
+  margin-left: 65px;
+}
+
+#content .firends ul li .info .date {
+  font-family: MicrosoftYaHei;
+  font-size: 18px;
+  font-weight: normal;
+  font-stretch: normal;
+  letter-spacing: 0px;
+  color: #666666;
+  margin-left: 559px;
+}
+
+#content .firends ul li .txt .text {
+  margin-left: 89px;
+  margin-top: 20px;
+  text-align: left;
+  position: relative;
+}
+
+#content .firends ul li .txt .text .title {
+  font-family: MicrosoftYaHei;
+  font-size: 24px;
+  font-weight: 700;
+  font-stretch: normal;
+  letter-spacing: 0px;
+  color: #333333;
+}
+
+#content .firends ul li .txt .text p {
+  width: 432px;
+  font-family: MicrosoftYaHei;
+  font-size: 18px;
+  font-weight: normal;
+  font-stretch: 20%;
+  letter-spacing: px;
+  color: #999999;
+  margin-top: 31px;
+}
+
+#content .firends ul li .F_chat {
+  position: relative;
+}
+
+#content .firends ul li .chat {
+  position: absolute;
+  right: 40px;
+  color: #999999;
+}
+
+#content .firends ul li .chat img {
+  width: 50px;
+  height: 50px;
+}
+
+#content .firends ul li .chat img:hover {
+  transform: scale(1.3);
+}
+
+#content .firends ul li:hover {
+  transform: scale(1.03);
+}
+
+#content .firends .form .input {
+  padding-top: 30px;
+  padding-right: 30px;
+}
+
+#content .firends .form .input input {
+  width: 466px;
+  height: 51px;
+  background-color: #ffffff;
+  border-radius: 10px;
+  border: 1px solid #0c0c0c;
+  text-align: center;
+  font-family: MicrosoftYaHei;
+  font-size: 18px;
+  font-weight: normal;
+  font-stretch: normal;
+  letter-spacing: 0px;
+  color: #999999;
+  outline: navajowhite;
+}
+
+#content .firends .form .input input:focus {
+  border: 1px solid #efefef;
+  box-shadow: 0 0 10px #0c0c0c;
+}
+
+#content .firends .form .input i {
+  position: absolute;
+  top: 45px;
+  right: 40px;
+  font-size: 25px;
+}
+
+
+#content .firends .form .upload {
+  width: 487px;
+  height: 902px;
+  border-radius: 10px;
+  text-align: center;
+  margin-top: 31px;
+  background-color: #57f5a1;
+}
+
+#content .firends .form .upload .title {
+  font-family: MicrosoftYaHei-Bold;
+  font-size: 36px;
+  font-weight: normal;
+  font-stretch: normal;
+  letter-spacing: 0px;
+  color: #ffffff;
+  margin-top: 31px;
+  padding-top: 15px;
+}
+
+#content .firends .form .upload .input {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  margin-top: 47px;
+}
+
+#content .firends .form .upload .input .address {
+  text-align: left;
+  margin-left: 20px;
+}
+
+#content .firends .form .upload .input .address label {
+  display: block;
+  font-family: MicrosoftYaHei;
+  font-size: 18px;
+  font-weight: normal;
+  font-stretch: normal;
+  letter-spacing: 0px;
+  color: #ffffff;
+}
+
+#content .firends .form .upload .input .address input {
+  width: 450px;
+  height: 48px;
+  background-color: #ffffff;
+  border-radius: 10px;
+  border: 0;
+  outline: none;
+  font-family: MicrosoftYaHei;
+  font-size: 18px;
+  font-weight: normal;
+  font-stretch: normal;
+  letter-spacing: 0px;
+  color: #999;
+  padding: 17px 15px;
+}
+
+#content .firends .form .upload .input .date {
+  text-align: left;
+  margin-top: 20px;
+  margin-left: 20px;
+}
+
+#content .firends .form .upload .input .date input {
+  width: 450px;
+  height: 48px;
+  background-color: #ffffff;
+  border-radius: 10px;
+  border: 0;
+  outline: none;
+  font-family: MicrosoftYaHei;
+  font-size: 18px;
+  font-weight: normal;
+  font-stretch: normal;
+  letter-spacing: 0px;
+  color: #999;
+  padding: 17px 15px;
+}
+
+
+#content .firends .form .upload .input .date label {
+  display: block;
+  font-family: MicrosoftYaHei;
+  font-size: 18px;
+  font-weight: normal;
+  font-stretch: normal;
+  letter-spacing: 0px;
+  color: #ffffff;
+}
+
+#content .firends .form .upload .major {
+  text-align: left;
+  margin-left: 13px;
+  margin-top: 38px;
+}
+
+#content .firends .form .upload .major label {
+  display: block;
+  font-family: MicrosoftYaHei;
+  font-size: 18px;
+  font-weight: normal;
+  font-stretch: normal;
+  letter-spacing: 0px;
+  color: #ffffff;
+  margin-bottom: 9px;
+}
+
+#content .firends .form .upload .major textarea {
+  width: 460px;
+  height: 130px;
+  background-color: #ffffff;
+  border-radius: 10px;
+  font-family: MicrosoftYaHei;
+  font-size: 18px;
+  font-weight: normal;
+  font-stretch: normal;
+  letter-spacing: 0px;
+  color: #999999;
+  padding: 17px 27px 0;
+  outline: none;
+  border: none;
+  resize: initial;
+}
+
+#content .firends .form .upload .sumbit {
+  width: 243px;
+  height: 82px;
+  background-image: linear-gradient(0deg, #c1fdc9 0%, #90f9c4 50%, #57f5a1 100%);
+  box-shadow: 0px 3px 7px 0px rgba(0, 0, 0, 0.35);
+  border-radius: 10px;
+  border: solid 1px #cbc7c7;
+  font-family: MicrosoftYaHei-Bold;
+  font-size: 30px;
+  font-weight: normal;
+  font-stretch: normal;
+  letter-spacing: 0px;
+  color: #ffffff;
+  margin-top: 70px;
+  box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.6);
+}
+
+#content .firends .form .upload .sumbit:active {
+  transform: scale(0.95);
+}

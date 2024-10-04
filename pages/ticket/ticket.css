@@ -1,0 +1,448 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  background-color: #efefef;
+}
+.center {
+  margin: 0 auto;
+  /* background-color: pink; */
+  width: 100%;
+  text-align: end;
+}
+a {
+  color: #fff;
+  list-style: none;
+  text-decoration: none;
+}
+/* 公共通用样式或默认样式 */
+/* 一级导航栏 */
+.first-header {
+  width: 100%;
+  height: 47px;
+  background-color: #333;
+  display: flex;
+  justify-content: space-between;
+}
+.first-header .txt p {
+  margin: 0;
+  padding: 0;
+  color: #fff;
+  font-size: 20px;
+  margin-left: 150px;
+  line-height: 47px;
+}
+.first-header ul {
+  display: flex;
+  list-style: none;
+}
+.first-header ul li {
+  color: #fff;
+  list-style: none;
+  width: 64px;
+  height: 16px;
+  font-size: 16px;
+  font-family: AdobeHeitiStd-Regular;
+  line-height: 47px;
+  margin-right: 40px;
+}
+.first-header ul li:nth-child(4) {
+  margin-right: 120px;
+}
+.first-header ul li:hover {
+  font-weight: 700;
+}
+.first-header .txt p:hover {
+  font-weight: 700;
+}
+/* 一级导航栏 */
+/* 二级导航栏 */
+.header {
+  width: 100%;
+  height: 108px;
+  background-color: #89e291;
+  position: relative;
+}
+.header .content {
+  display: flex;
+  width: 1500px;
+  height: 108px;
+  margin: 0 auto;
+  align-items: center;
+  justify-content: space-between;
+}
+.header .content .text {
+  display: flex;
+  align-items: center;
+}
+.header .content .text span {
+  font-family: MicrosoftYaHei;
+  font-size: 18px;
+  font-weight: normal;
+  letter-spacing: 0px;
+  color: #333333;
+}
+.header .content .text h2 {
+  font-family: STXingkai;
+  font-size: 70px;
+  font-weight: normal;
+  font-stretch: normal;
+  letter-spacing: 0px;
+  color: #040404;
+}
+.header .content .input {
+  position: relative;
+}
+.header .content .input input {
+  width: 466px;
+  height: 51px;
+  background-color: #fbf9f9;
+  border-radius: 10px;
+  border: 1px solid #efefef;
+  text-align: center;
+  font-family: MicrosoftYaHei;
+  font-size: 18px;
+  font-weight: normal;
+  font-stretch: normal;
+  letter-spacing: 0px;
+  color: #999999;
+}
+.header .content .input input:focus {
+  border: 1px solid #efefef;
+  box-shadow: 0 0 10px #efefef;
+}
+.header .content .input i {
+  position: absolute;
+  top: 15px;
+  right: 30px;
+  font-size: 25px;
+}
+.header .setting {
+  width: 100px;
+  height: 100px;
+  position: absolute;
+  right: 60px;
+  top: 5px;
+  transition: all 0.5s;
+  transform-origin: 50% 50%;
+  text-align: center;
+  line-height: 100px;
+}
+.header .setting i {
+  font-size: 50px;
+  color: #fff;
+}
+/* 二级导航栏 */
+/* 版权区域 */
+.footer {
+  width: 100%;
+  height: 266px;
+  background-color: #89e291;
+  margin-top: 206px;
+  display: flex;
+  justify-content: space-between;
+  z-index: 100;
+}
+.footer .left {
+  margin-left: 150px;
+  margin-top: 60px;
+}
+.footer .left p {
+  color: #fff;
+  font-weight: 700;
+  font-size: 26px;
+  margin-top: 10px;
+}
+.footer .right {
+  /* background-color: red; */
+  margin-right: 300px;
+}
+.footer .right h4 {
+  color: #fff;
+  text-align: center;
+  font-size: 40px;
+  margin-top: 50px;
+}
+.footer .right ul {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  margin-top: 30px;
+}
+.footer .right ul li {
+  width: 72px;
+  height: 72px;
+  border-radius: 50%;
+  background-color: #fff;
+  text-align: center;
+  line-height: 72px;
+  margin-left: 10px;
+  margin-right: 10px;
+  position: relative;
+}
+.footer .right ul li i {
+  color: #89e291;
+  font-size: 40px;
+}
+.footer .right ul li:nth-child(3) i {
+  font-size: 37px;
+}
+.footer .right ul li .box {
+  position: absolute;
+  width: 176px;
+  height: 176px;
+  border-radius: 20px;
+}
+.footer .right ul li:nth-child(1) .box {
+  background-color: #fff;
+  /* display: none; */
+  top: -80px;
+  left: 280px;
+  background-image: url(../../images/index/wexin.jpg);
+  background-size: contain;
+}
+.footer .right ul li:nth-child(2) .box {
+  background-color: pink;
+  display: none;
+  top: -80px;
+  left: 188px;
+  background-image: url(../../images/index/blilibili.jpg);
+  background-size: contain;
+}
+.footer .right ul li:nth-child(3) .box {
+  display: none;
+  top: -80px;
+  right: -200px;
+  background-image: url(../../images/index/douyin.jpg);
+  background-size: contain;
+}
+.footer .right ul li.active i,
+.right ul li:hover i {
+  color: #fff;
+}
+.footer .right ul li.active,
+.footer .right ul li:hover {
+  background-color: #89e291;
+  /* border: 1px solid #000;
+     */
+  box-shadow: 0 0 10px #fff;
+}
+.footer .right ul li.active .box {
+  display: block;
+}
+/* 版权区域 */
+.top {
+  width: 100%;
+  height: 40px;
+  background-color: #fff;
+  text-align: center;
+}
+.top .txt {
+  margin: 0 auto;
+  width: 1440px;
+  height: 100%;
+  text-align: left;
+  line-height: 40px;
+  font-size: 20px;
+  color: #89e291;
+  font-weight: 700;
+}
+.content {
+  width: 1440px;
+  margin: 0 auto;
+  display: flex;
+  align-items: start;
+  justify-content: space-between;
+  margin-top: 50px;
+}
+.content .left {
+  margin-left: 100px;
+  width: 40%;
+}
+.content .left .img {
+  margin-top: 20px;
+}
+.content .left .img img {
+  width: 600px;
+}
+.content .left .swiper {
+  width: 610px;
+  margin: 0 auto;
+  text-align: center;
+  margin-top: 30px;
+}
+.content .left .swiper ul {
+  width: 610px;
+  list-style: none;
+  display: flex;
+  overflow: hidden;
+  align-items: center;
+  background-color: #fff;
+  padding: 5px 5px;
+  transform: translate(-5px);
+}
+.content .left .swiper ul li {
+  width: 140px;
+  margin: 0 5px;
+  transition: all 0.5s;
+  animation: swiper 16s linear infinite;
+}
+.content .left .swiper ul li img {
+  width: 140px;
+  transition: all 0.5s;
+}
+.content .left .swiper ul li img:hover {
+  transform: scale(1.1);
+}
+@keyframes swiper {
+  0% {
+    transform: translate(0);
+  }
+  100% {
+    transform: translate(-1800px);
+  }
+}
+.content .right {
+  margin-right: 150px;
+  text-align: left;
+}
+.content .right .title {
+  text-align: left;
+  font-size: 30px;
+  font-weight: 700;
+  color: #333;
+}
+.content .right .des {
+  text-align: left;
+  font-size: 14px;
+  color: #666;
+  margin-top: 20px;
+}
+.content .right .price {
+  font-size: 35px;
+  font-weight: 700;
+  color: #ff0000;
+  margin-top: 20px;
+}
+.content .right .price span {
+  font-size: 20px;
+  color: #666;
+  font-weight: 700;
+}
+.content .right .count {
+  margin-top: 20px;
+  font-size: 20px;
+  color: #666;
+  font-weight: 700;
+  display: flex;
+  align-items: center;
+}
+.content .right .count span {
+  width: 30px;
+  height: 30px;
+  display: inline-block;
+  background-color: #fff;
+  text-align: center;
+  line-height: 30px;
+  font-size: 20px;
+  margin-left: 6px;
+  cursor: pointer;
+}
+.content .right .count span.add,
+.content .right .count span.dec {
+  font-size: 24px;
+  font-weight: normal;
+  background-color: #d8d8d8;
+}
+.content .right .date {
+  font-size: 20px;
+  color: #666;
+  font-weight: 700;
+  margin-top: 20px;
+}
+.content .right .date input {
+  width: 200px;
+  height: 30px;
+  outline: none;
+  border: none;
+  font-size: 16px;
+  padding-left: 10px;
+  color: #999;
+}
+.content .right .specs {
+  margin-top: 20px;
+  font-size: 20px;
+  color: #666;
+  font-weight: 700;
+}
+.content .right .specs .ticketlist {
+  width: 500px;
+  height: 130px;
+  list-style: none;
+  display: flex;
+  flex-wrap: wrap;
+  margin-top: 10px;
+}
+.content .right .specs .ticketlist > li {
+  height: 30px;
+  text-align: center;
+  line-height: 30px;
+  padding: 0  5px;
+  font-size: 16px;
+  border: 1px solid #89e291;
+  margin-right: 20px;
+  border-radius: 10px;
+  cursor: pointer;
+}
+.content .right .specs .ticketlist > li:hover,
+.content .right .specs .ticketlist > li.active {
+  background-color: #89e291;
+  color: #fff;
+}
+.content .right .specs .ticketlist > li:nth-child(2) {
+  margin-left: 17px;
+}
+.content .right .specs .ticketlist > li:nth-child(4) {
+  margin-right: 80px;
+}
+.content .right .specs .ticketlist > li:nth-child(7) {
+  margin-left: 12px;
+}
+.content .right .btn button {
+  width: 150px;
+  height: 50px;
+  border: none;
+  position: relative;
+  background-color: #89e291;
+  color: #fff;
+  border-radius: 15px;
+  box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.6);
+  overflow: hidden;
+  transition: all 0.5s;
+  text-align: center;
+  font-size: 20px;
+  margin-right: 20px;
+}
+.content .right .btn button::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: -40%;
+  width: 20%;
+  height: 100%;
+  background: linear-gradient(90deg, transparent, #fff, transparent);
+  transform: skewX(-45deg);
+}
+.content .right .btn button:hover::before {
+  left: 120%;
+  transition: all 0.5s;
+}
+.content .right .btn button:hover {
+  background-color: #ee1a1af8;
+  font-weight: 700;
+}
+.content .right .btn .cart:hover {
+  background-color: #e45c1ef3;
+}

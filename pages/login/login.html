@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="icon"  href="../../images/index/title-logo.ico">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>山水婺源</title>
+    <link rel="stylesheet" href="./login.css">
+</head>
+<body>
+    <!-- 标题 -->
+    <div class="container panel-active">
+        <div class="title-logo">
+            <img src="../../images/index/logo.png" alt="">
+            <div class="text">山水相映~文化交融</div>
+        </div>
+        <!-- 注册 -->
+        <div class="formbox register">
+            <form class="form" id="form1" >
+                <h2 class="title">注册</h2>
+                <input type="text" placeholder="手机号" class="input" id="tel" />
+                <input type="text" placeholder="用户名" class="input"  id="name"/>
+                <input type="password" placeholder="密码" class="input" id="pswd"/>
+                <div class="btn" id="btnRegister">注册</div>
+            </form>
+        </div>
+
+        <!-- 登录 -->
+        <div class="formbox login">
+            <form class="form" id="form2" >
+                <h2 class="title">登录</h2>
+                <input type="text" placeholder="用户名" class="input" id="username" />
+                <input type="password" placeholder="密码" class="input" id="password" />
+                <a href="#" class="link">忘记密码？</a>
+                <div class="btn" id="btnLogin" >登录</div>
+            </form>
+        </div>
+
+        <!-- 浮层 -->
+        <div class="overlay-box">
+            <div class="overlay">
+                <div class="panel over-left">
+                    <button class="btn" id="singIn">已有帐号？立即登录</button>
+                </div>
+                <div class="panel over-right">
+                    <button class="btn" id="singUp">无账号？去注册</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="./login.js"></script>
+</body>
+</html>

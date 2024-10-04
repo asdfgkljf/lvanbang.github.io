@@ -1,0 +1,941 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.center {
+    margin: 0 auto;
+    /* background-color: pink; */
+    width: 100%;
+    text-align: end;
+}
+a {
+    color: #fff;
+    list-style: none;
+    text-decoration: none;
+    
+}
+/* 公共通用样式或默认样式 */
+/* 一级导航栏 */
+.first-header {
+    width: 100%;
+    height: 47px;
+    background-color: #333;
+    display: flex;
+    justify-content: space-between;
+
+}
+
+.first-header .txt p {
+    margin: 0;
+    padding: 0;
+    color: #fff;
+    font-size: 20px;
+    margin-left: 150px;
+    line-height: 47px;
+    
+}
+.first-header ul {
+    display: flex;
+    list-style: none; 
+}
+.first-header ul li {
+    color: #fff;
+    list-style: none;
+    width: 64px;
+    height: 16px;
+    font-size: 16px;
+    font-family:  AdobeHeitiStd-Regular;
+    line-height: 47px;
+    margin-right: 40px; 
+
+}
+.first-header ul li:nth-child(4) {
+    margin-right: 120px;
+}
+
+.first-header ul li:hover {
+    font-weight: 700;
+}
+.first-header .txt p:hover {
+    font-weight: 700;
+}
+/* 一级导航栏 */
+
+/* 二级导航栏 */
+.header {
+    width: 100%;
+     height: 108px;
+     background-color: #89e291;
+     .content {
+        display: flex;
+        width: 1440px;
+        height: 108px;
+        // background-color: pink;
+        margin: 0 auto;
+        align-items: center;
+        justify-content: space-between;
+
+        .text {
+            display: flex;
+            align-items: center;
+            span {
+                font-family: MicrosoftYaHei;
+                font-size: 18px;
+                font-weight: normal;
+                letter-spacing: 0px;
+                color: #333333;
+            }
+            h2 {
+                font-family: STXingkai;
+                font-size: 70px;
+                font-weight: normal;
+                font-stretch: normal;
+                letter-spacing: 0px;
+                color: #040404;
+            }
+        }
+        .input {
+            position: relative;
+            input {
+                width: 466px;
+                height: 51px;
+                background-color: #fbf9f9;
+                border-radius: 10px;
+                border: 1px solid #efefef;
+                text-align: center;
+                font-family: MicrosoftYaHei;
+                font-size: 18px;
+                font-weight: normal;
+                font-stretch: normal;
+                letter-spacing: 0px;
+                color: #999999;
+                outline: navajowhite;
+                &:focus {
+                    border: 1px solid #efefef;
+                    box-shadow: 0 0 10px #efefef;
+                }
+                
+           
+            }
+            i {
+                position: absolute;
+                top: 15px;
+                right:30px;
+                font-size: 25px;
+            }
+        }
+     }
+
+}
+/* 二级导航栏 */
+
+// banner
+.banner {
+    width: 100%;
+	height: 551px;
+    margin: 0 auto;
+    text-align: center;
+    // background-color: #efefef;
+
+    position: relative;
+    .banner-list {
+        width: 100%;
+        height: 100%;
+        z-index: 10;
+        li {
+            
+            img {
+                width: 1439px;
+                height: 551px;
+                border: 1px solid #efefef;
+                
+            }
+        }
+    }
+    &::after {
+        content: '';
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        background-color: efefef;
+        background-image: url(../../images/Introduction/banner.png);
+        background-size: 200%;
+        top: 0;
+        left: 0;
+        z-index: -1;
+        filter: blur(10px);
+        // filter: brightness(0.8);
+    }
+}
+// banner
+
+// 畅玩婺源
+.playWY {
+    width: 1440px;
+    // background-color: pink;
+    text-align: center;
+    margin: 0 auto;
+    .title {
+        margin: 0 auto;
+        // width: 225px;
+        height: 55px;
+        font-family: STXingkai;
+        font-size: 60px;
+        font-weight: normal;
+        font-stretch: normal;
+        letter-spacing: 0px;
+        color: #090909;
+        margin-top: 100px;
+        margin-bottom: 50px;
+    }
+    .content {
+      
+        ul {
+            display: flex;
+            // flex-direction: column;
+            justify-content: center;
+            list-style: none;
+            // background-color: #89e291;
+            text-align: center;
+            .item1 {
+                // background-color: green;
+                
+                div {
+                    margin-top: 17px;
+                    position: relative;
+                    &::before {
+                        content: '文化';
+                        font-family: MicrosoftYaHei;
+                        font-size: 36px;
+                        font-weight: normal;
+                        font-stretch: normal;
+                        letter-spacing: 0px;
+                        color: #fffefe;
+                        position: absolute;
+                        left: 39px;
+                        top: 15px;
+                    }
+                    &::after {
+                        content: 'Culture';
+                        font-family: MicrosoftYaHei-Bold;
+                        font-size: 36px;
+                        font-weight: normal;
+                        font-stretch: normal;
+                        letter-spacing: 0px;
+                        color: #fffefe;
+                        position: absolute;
+                        top: 60px;
+                        left: 19px;
+                    }
+                    &:hover {
+                        transform: scale(1.03)
+                        
+                    }
+                    transition: all 0.5s ;
+                }
+                .photography {
+                    width: 309px;
+	                height: 353px;
+                    background-color: #fff;
+                    background-image: url(../../images/Introduction/Photography.png);
+                    
+                    &::before {
+                        content: '摄影';
+                    }
+                    &::after {
+                        content: 'Photography';
+                    }
+                }
+                .culture {
+                    width: 309px;
+	                height: 306px;
+                    background-color: rgb(197, 61, 197);
+                    background-image: url(../../images/Introduction/Culture.png);
+                    position: relative;
+                    &::before {
+                        content: '文化';
+                    }
+                    &::after {
+                        content: 'Culture';
+                    }
+                }
+                .travel-agency {
+                    width: 309px;
+	                height: 192px;
+                    background-color: #000;
+                    background-image: url(../../images/Introduction/Travel-agency.png);
+                    &::before {
+                        content: '旅行社';
+                    }
+                    &::after {
+                        content: 'Travel agency';
+                    }
+                }
+            }
+            .item2 {
+                margin-left: 17px;
+                div{
+                    margin-top: 17px;
+                    position: relative;
+                    &::before {
+                        content: '';
+                        font-family: MicrosoftYaHei;
+                        font-size: 36px;
+                        font-weight: normal;
+                        font-stretch: normal;
+                        letter-spacing: 0px;
+                        color: #fffefe;
+                        position: absolute;
+                        left: 39px;
+                        top: 15px;
+                    }
+                    &::after {
+                        content: '';
+                        font-family: MicrosoftYaHei-Bold;
+                        font-size: 36px;
+                        font-weight: normal;
+                        font-stretch: normal;
+                        letter-spacing: 0px;
+                        color: #fffefe;
+                        position: absolute;
+                        top: 60px;
+                        left: 19px;
+                    }
+                    &:hover {
+                        transform: scale(1.03)
+                        
+                    }
+                    transition: all 0.5s ;
+                }
+                .attractionn {
+                    width: 601px;
+                    height: 449px;
+                    background-color: #fff;
+                    background-image: url(../../images/Introduction/Attraction.png);
+                    &::before {
+                        content: '景点';
+                    }
+                    &::after {
+                        content: 'Attraction';
+                    }
+                }
+                .guide {
+                    width: 601px;
+                    height: 211px;
+                    background-color: #fff;
+                    background-image: url(../../images/Introduction/Guide.png);
+                    &::before {
+                        content: '导游';
+                    }
+                    &::after {
+                        content: 'Guidey';
+                    }
+                }
+                .goods {
+                    display: flex;
+                    .shopping {
+                        width: 309px;
+	                    height: 192px;
+                        background-color: #fff;
+                        margin: 0;
+                        margin-right: 17px;
+                        background-image: url(../../images/Introduction/Shopping.png);
+                        &::before {
+                            content: '购物';
+                        }
+                        &::after {
+                            content: 'Shopping';
+                        }
+                    }
+                    .gift {
+                        width: 271px;
+                        height: 192px;
+                        background-color: #fff;
+                        margin: 0;background-image: url(../../images/Introduction/Gift.png);
+                        &::before {
+                            content: '文创';
+                        }
+                        &::after {
+                            content: 'Gift';
+                        }
+                    }
+                }
+            }
+            .item3 {
+                margin-left: 17px;
+                div {
+                    margin-top: 17px;
+                    position: relative;
+                    &::before {
+                        content: '文化';
+                        font-family: MicrosoftYaHei;
+                        font-size: 36px;
+                        font-weight: normal;
+                        font-stretch: normal;
+                        letter-spacing: 0px;
+                        color: #fffefe;
+                        position: absolute;
+                        left: 39px;
+                        top: 15px;
+                    }
+                    &::after {
+                        content: 'Culture';
+                        font-family: MicrosoftYaHei-Bold;
+                        font-size: 36px;
+                        font-weight: normal;
+                        font-stretch: normal;
+                        letter-spacing: 0px;
+                        color: #fffefe;
+                        position: absolute;
+                        top: 60px;
+                        left: 19px;
+                    }
+                    &:hover {
+                        transform: scale(1.03)
+                        
+                    }
+                    transition: all 0.5s ;
+                }
+               .stay {
+                    width: 354px;
+	                height: 173px;
+                    background-color: #fff;
+                    background-image: url(../../images/Introduction/Stay.png);
+                    &::before {
+                        content: '住宿';
+                    }
+                    &::after {
+                        content: 'Stay';
+                    }
+               }
+               .delicacy {
+                    width: 354px;
+	                height: 345px;
+                    background-color: #fff;
+                    background-image: url(../../images/Introduction/Delicacy.png);
+                    &::before {
+                        content: '美食';
+                    }
+                    &::after {
+                        content: 'Delicacy';
+                    }
+               }
+               .portray {
+                    width: 354px;
+	                height: 337px;
+                    background-color: #fff;
+                    background-image: url(../../images/Introduction/Portray.png);
+                    &::before {
+                        content: '写真';
+                    }
+                    &::after {
+                        content: 'Portray';
+                    }
+               }
+            }
+        }
+    }
+
+}
+// 畅玩婺源
+
+// 游玩攻略
+.playPlan {
+    width: 1440px;
+    height: 1000px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    // background-color: #efefef;
+    margin-top: 120px;
+    transform: translateY(100px);
+    opacity: 0;
+    transition: all 1.5s;
+    &.active {
+        transform: translateY(0);
+        opacity: 1;
+    }
+    .left {
+        width: 890px;
+        // background-color: red;
+        text-align: center;
+        margin-top: 110px;
+        .title {
+            font-family: STXingkai;
+            font-size: 60px;
+            font-weight: normal;
+            font-stretch: normal;
+            letter-spacing: 0px;
+            color: #090909;
+            margin-bottom: 100px;
+           
+        }
+        .content {
+            ul {
+                width: 100%;
+                display: flex;
+                justify-content: center;
+                flex-wrap: wrap;
+                list-style: none;
+                margin-top: 48px;
+                li {
+                    width: 388px;
+	                height: 192px;
+                    background-color: #89e291;
+                    margin-left: 56px;
+                    margin-top: 38px;
+                    display: flex;
+                    align-items: center;
+                    transition: all 0.5s;
+                    &:hover {
+                        transform: scale(1.03);
+                    }
+                    .img {
+                        margin-left: 18px;
+                       img {
+                        width: 150px;
+	                    height: 152px;
+                        border-radius: 10px;
+                       }
+                    }
+                    .txt {
+                        text-align: left;
+                        display: flex;
+                        flex-direction: column;
+                        justify-content: space-between;
+                        h5 {
+                            font-family: MicrosoftYaHei;
+                            font-size: 36px;
+                            font-weight: normal;
+                            font-stretch: normal;
+                            letter-spacing: 0px;
+                            color: #fffefe;
+                            margin-left: 24px;
+                           margin-top: -18px;
+                        }
+                        p {
+                            font-family: MicrosoftYaHeiLight;
+                            font-size: 18px;
+                            font-weight: normal;
+                            font-stretch: normal;
+                            letter-spacing: 0px;
+                            color: #fffefe;
+                            margin-left: 17px;
+                            padding-right: 5px;
+                            width: 186px;
+                            margin-top: 20px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+    .right {
+        background-color: pink;
+        width: 409px;
+        height: 1200px;
+        background-color: #89e291;
+        text-align: center;
+        margin-left: 60px;
+       
+        .title {
+            width: 301px;
+            height: 70px;
+            background-color: #fbf9f9;
+            border-radius: 10px;
+            font-family: MicrosoftYaHei;
+            font-size: 30px;
+            font-weight: normal;
+            font-stretch: normal;
+            letter-spacing: 0px;
+            color: #080808;
+            margin: 0 auto;
+            text-align: center;
+            line-height: 70px;
+            margin-top: 53px;
+        }
+        ul {
+            list-style: none;
+            margin-left: 55px;
+            margin-top: 66px;
+            li {
+                width: 297px;
+                height: 162px;
+                background-color: #fbf9f9;
+                border-radius: 10px;
+                margin-top: 32px;
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                position: relative;
+                transition: all 0.5s;
+                &::before { 
+                    content: '1';
+                    position: absolute;
+                    top: 0;
+                    left: 0;
+                    width: 31px;
+                    height: 32px;
+                    font-family: MicrosoftYaHei-Bold;
+                    font-size: 24px;
+                    font-weight: normal;
+                    font-stretch: normal;
+                    letter-spacing: 0px;
+                    color: #faf8f8;
+                    background-color: #ec0b0b;
+                    border-radius: 50%;
+                    margin-left: 4px;
+                    margin-top: 5px;
+
+                }
+                &:nth-child(1) {
+                    &::before {
+                        content: '1';
+                    }
+                    &::after {
+                        content: '5A';
+                    }
+                }
+                &:nth-child(2) {
+                    &::before {
+                        content: '2';
+                    }
+                    &::after {
+                        content: '5A';
+                    }
+                }
+                &:nth-child(3) {
+                    &::before {
+                        content: '3';
+                    }
+                    &::after {
+                        content: '4A';
+                    }
+                }
+                &:nth-child(4) {
+                    &::before {
+                        content: '4';
+                    }
+                    &::after {
+                        content: '4A';
+                    }
+                    }
+                &:nth-child(5) {
+                    &::before {
+                        content: '5';
+                    }
+                    &::after {
+                        content: '4A';
+                    }
+                    }
+
+                &::after {
+                    content: '5A';
+                    position: absolute;
+                    right: 0;
+                    bottom: 0;
+                    font-family: MicrosoftYaHei-Bold;
+                    font-size: 24px;
+                    font-weight: 700;
+                    font-stretch: normal;
+                    letter-spacing: 0px;
+                    color: #ec0b0b;
+                    margin-bottom: 25px;
+                    margin-right: 25px;
+                }
+                &:hover {
+                    transform: scale(1.03);
+                }
+                .img {
+                    margin-left: 6px;
+                }
+                p {
+                    font-family: STXingkai;
+                    font-size: 63px;
+                    font-weight: normal;
+                    font-stretch: normal;
+                    letter-spacing: 0px;
+                    color: #999999;
+                    // margin-left: 33px;
+                    margin-right: 30px;
+                }
+            }
+        }
+    }
+}
+// 游玩攻略
+
+// 非遗传承
+.FeiYi {
+    width: 1440px;
+    margin: 0 auto;
+    text-align: center;
+    margin-top: 300px;
+    transform: translateY(100px);
+    opacity: 0;
+    transition: all 1s;
+    &.active {
+        transform: translateY(0);
+        opacity: 1;
+    }
+    .title {
+        font-family: STXingkai;
+        font-size: 60px;
+        font-weight: normal;
+        font-stretch: normal;
+        letter-spacing: 0px;
+        color: #090909;
+       margin-bottom: 100px;
+    }
+    .content {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        transform-style: preserve-3d;
+        &:hover {
+            .img {
+                transform: scale(0.95) perspective(500px);
+            }
+        }
+        .img {
+            width: 228px;
+            height: 508px;
+            margin: 10px;
+            transition: all .5s;
+            position: relative;
+           
+            img {
+                width: 100%;
+                height: 100%;
+                border-radius: 10px;
+            }
+            // -webkit-box-reflect: below 0.5px linear-gradient( transparent, #000);
+            &::after {
+                content: '竹编工艺';
+                position: absolute;
+                left: 50%;
+                top: 60%;
+                transform: translateX(-50%);
+                font-family: STXingkai;
+                font-size: 40px;
+                font-weight: normal;
+                font-stretch: normal;
+                letter-spacing: 0px;
+                color: #ffffff;
+                opacity: 0;
+                transition: all .5s;
+                
+            }
+            &:hover {
+                width: 398px;
+                transform: scale(1.05) perspective(500px);
+                filter: 
+            drop-shadow(0 0 10px #efefef)
+            drop-shadow(0 0 15px #afa6a6);
+                &::after {
+                    opacity: 1;
+                    top: 80%;
+                text-shadow: 0 0 10px #000;
+
+                }
+            }
+            &:nth-child(1):after {
+                content: '竹编工艺'
+            }
+            &:nth-child(2):after {
+                content: '水墨桐香'
+            }
+            &:nth-child(3):after {
+                content: '徽州刺绣'
+            }
+            &:nth-child(4):after {
+                content: '歙砚'
+            }
+            &:nth-child(5):after {
+                content: '婺源烙画';
+                text-shadow: 0 0 10px #000;
+            }
+        }
+
+    }
+}
+// 非遗传承
+
+//好物推荐
+.remmcond {
+    width: 1440px;
+	margin: 0 auto;
+	background-color: #ffffff;
+	border-radius: 10px;
+    margin-top: 80px;
+    text-align: center;
+    padding: 0 200px;
+    // transform: translate(-50px);
+    .title {
+        
+        text-align: center;
+        margin-bottom: 57px;
+        h3 {
+            padding-top: 68px;
+            font-family: STXingkai;
+            font-size: 48px;
+            font-weight:700;           
+            letter-spacing: 0px;
+            color: #363d4d
+        }
+        hr {
+        
+            margin: 0 auto;
+            margin-top: 30px;
+            width: 162px;
+            height: 5px;
+            background-color: #999999;
+            border-radius: 3px;
+                }
+    }
+    .goods {
+        margin: 0 auto;
+        list-style: none;
+        column-count:4;
+        column-gap: 20px;
+        margin: 0 10px;
+        margin-left: 30px;
+        
+        li {
+            width: 221px;
+            height: auto;
+            background-color: #f8f7f7;
+            border-radius: 10px;
+            border:  solid 5px #89e291;
+           margin-bottom: 20px;
+           position: relative;
+           transition: all .5s ease-in-out;
+           &:hover {
+            transform: scale(1.1);
+            box-shadow: 0 0 10px #89e291;
+            span {
+                transform: scale(1.1);
+            }
+           }
+            img {
+                width: 100%;
+                height: auto;
+                border-radius: 10px;
+                
+            }
+            span {
+                position: absolute;
+                font-size: 30px;
+                color: #fff;
+                top: 50%;
+                left: 32%;
+                font-weight: 700;
+                transform: scale(0);
+                transition: all 0.5s ease-in-out;
+            }
+        }
+    }
+}
+//好物推荐
+
+/* 版权区域 */
+.footer {
+    width: 100%;
+    height: 266px;
+    background-color: #89e291;
+    margin-top: 206px;
+    display: flex;
+    justify-content: space-between;
+    z-index: 100;
+}
+.footer .left {
+    margin-left: 150px;
+    margin-top: 60px;
+}
+.footer .left p {
+    color: #fff;
+    font-weight: 700;
+    font-size: 26px;
+    margin-top: 10px;
+}
+.footer .right {
+    /* background-color: red; */
+    margin-right:300px;
+}
+.footer .right h4 {
+    color:#fff ;
+    text-align: center;
+    font-size: 40px;
+    margin-top: 50px;
+}
+.footer .right ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    margin-top: 30px;
+}
+.footer .right ul li {
+    width: 72px;
+    height: 72px;
+    border-radius: 50%;
+    background-color:#fff;
+    text-align: center;
+    line-height: 72px;
+    margin-left: 10px;
+    margin-right: 10px;
+    position: relative;
+}
+.footer .right ul li i {
+    color: #89e291;
+    font-size: 40px;
+}
+.footer .right ul li:nth-child(3) i {
+    font-size: 37px;
+}
+.footer .right ul li .box {
+    background-color: red;
+    position: absolute;
+    width: 176px;
+    height: 176px;
+    border-radius: 20px;
+}
+.footer .right ul li:nth-child(1) .box {
+    background-color: #fff;
+    /* display: none; */
+    top:-80px;
+    left: 280px;
+    background-image: url(./images//index/wexin.jpg);
+    background-size: contain;
+}
+.footer .right ul li:nth-child(2) .box {
+    background-color: pink;
+    display: none;
+    top:-80px;
+    left: 188px;
+    background-image: url(./images//index/blilibili.jpg);
+    background-size: contain;
+}
+.footer .right ul li:nth-child(3) .box {
+    display: none;
+    top: -80px;
+    right: -200px;
+    background-image: url(./images/index/douyin.jpg);
+    background-size: contain;
+}
+.footer .right ul li.active i,
+.right ul li:hover i {
+    color: #fff;
+
+}
+.footer .right ul li.active,
+.footer .right ul li:hover {
+    background-color: #89e291;
+    /* border: 1px solid #000;
+     */
+     box-shadow: 0 0 10px #fff;
+}
+.footer .right ul li.active .box {
+    display: block;
+}
+/* 版权区域 */
